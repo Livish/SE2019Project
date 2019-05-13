@@ -49,11 +49,11 @@ public class SystemTest {
 		
 		Collections.sort(latency);
 		int oneP = 0, twoP = 0, threeP = 0, fourP = 0, fiveP = 0;
-		oneP = (int) (latency.size() * 0.5 - 1);
-		twoP = (int) (latency.size() * 0.75 - 1);
-		threeP = (int) (latency.size() * 0.9 - 1);
-		fourP = (int) (latency.size() * 0.99 - 1);
-		fiveP = (int) (latency.size() * 0.999 - 1);
+		oneP = (int) (latency.size() * 0.5);
+		twoP = (int) (latency.size() * 0.75);
+		threeP = (int) (latency.size() * 0.9);
+		fourP = (int) (latency.size() * 0.99);
+		fiveP = (int) (latency.size() * 0.999);
 		System.out.println("The latency of 50th percentiles is : " + latency.get(oneP) + "us");
 		System.out.println("The latency of 75th percentiles is : " + latency.get(twoP) + "us");
 		System.out.println("The latency of 90th percentiles is : " + latency.get(threeP) + "us");
