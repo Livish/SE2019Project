@@ -10,11 +10,14 @@ Input example:
 
 Please enter times your want to input : 
 10
+
 Please enter number of processors : 
 1
+
 Please enter microsecond input rates : 
 9 5 7 1 6 4 8 2 4 6
+
 Please enter processor speeds : 
 1 2 4 8 6 4 7 8 9 6
 
-SHA HASH:
+SHA HASH: 52009638269969c9156fa34cb2acd80146abd46f
