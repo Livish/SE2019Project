@@ -1,0 +1,32 @@
+*Test Class                 
+SystemTest.java
+
+*Case Describe
+Users specify input parameters: number of processors, rate, message number to get latency.
+
+*Test Environment
+Eclipse
+
+*Test Data
+
+(1) test case with constant input rata > processing unit rate
+Prosessor Num: 1    Microsecond Rate: 4    Microsecond Message: 8        Manual Calculate Restult -    latency:   1us      microsecond (us)  
+Prosessor Num: 2    Microsecond Rate: 4    Microsecond Message: 10      Manual Calculate Restult -               0.25us
+Prosessor Num: 4    Microsecond Rate: 4    Microsecond Message: 20      Manual Calculate Restult -               0.25us
+Prosessor Num: 8    Microsecond Rate: 4    Microsecond Message: 40      Manual Calculate Restult -               0.25us
+
+   
+(2) test case with constant input rata < processing unit rate
+Prosessor Num: 1    Microsecond Rate: 3    Microsecond Message: 1        Manual Calculate Restult:      latency:  -0.67us
+Prosessor Num: 2    Microsecond Rate: 3    Microsecond Message: 5        Manual Calculate Restult:                    -0.17us
+Prosessor Num: 4    Microsecond Rate: 3    Microsecond Message: 9        Manual Calculate Restult:                    -0.25us
+Prosessor Num: 8    Microsecond Rate: 3    Microsecond Message: 17      Manual Calculate Restult:                    -0.29us
+
+(3) test case with constant input rata == processing unit rate
+Prosessor Num: 1    Microsecond Rate: 6    Microsecond Message: 6        Manual Calculate Restult:       latency: 0us
+Prosessor Num: 2    Microsecond Rate: 6    Microsecond Message: 12      Manual Calculate Restult:                    0us
+Prosessor Num: 4    Microsecond Rate: 6    Microsecond Message: 24      Manual Calculate Restult:                    0us
+Prosessor Num: 8    Microsecond Rate: 6    Microsecond Message: 48      Manual Calculate Restult:                    0us
+
+Compare with actual results:
+All matched.

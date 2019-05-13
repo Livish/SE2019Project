@@ -1,0 +1,55 @@
+Sprint1
+=======================================================================
+*Story 1. Simulate a particular day's data rates.
+Rate = message number / second.
+
+Tasks (1)  Download FeedRate.csv file from marketdatapeaks.net:
+(2)Create CsvReader class to read data
+(3)Store data.
+
+*Story 2. Know average message latency and throughput.
+Average Throughput = Average Rate
+Average Rate = (Throughput += per second FeedRates) / FeedRates number
+Latency= (Per second Message count / Average Throughput or per second rate ) - 1
+Average Latency = (Total Latency += Latency) / Time
+  
+Tasks (1) Calculate average throughput.
+(2)Set per second message count
+(3)Calculate Latency and store them
+(4)Calculate average latency
+(5)Display average throughtput and average latency
+
+*Story 3. Monolithic design in simulation
+Tasks (1) Set input buffer and processing unit - This task is related with Story 2 tasks. 
+
+Sprint2
+=======================================================================
+Story 4. Make sure simulation results are correct
+Tasks (1) Create test class
+
+Story 5. Use more realistic input date rate model
+Tasks (1) Set per microsecond input message count
+(2)Calculate microsecond rates
+(3)Calculate latency
+
+
+Story 6. Know the distribution of latency as 50th, 75th, 99th, and 99.9th percentiles.
+Task (1) Calculate distribution 
+(2)Show distribution.
+
+Sprint 3
+========================================================================
+Story 7. Task parallel design.
+
+Tasks (1). design parallel modle
+Ratas = Rates * P
+
+Story 8. Provide per - microsecond data rates to the simulation.
+Tasks (1). Set microsecnod rates
+(2). Reader microsecond rates file.
+(3). Display result.
+
+Story 9. See system level test cases.
+Tasks (1). Set test data: processors, rate, message
+(2). Manual calculate
+(3). Compare with story 8 result.
