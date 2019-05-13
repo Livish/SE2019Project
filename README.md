@@ -9,12 +9,12 @@ Input choices: file name: "FeedRates.csv" or "MicroRates.csv" processor number: 
 Input example:
 
 Please enter times your want to input : 
-5
+10
 Please enter number of processors : 
-2
+1
 Please enter microsecond input rates : 
-6 5 7 1 2 
+9 5 7 1 6 4 8 2 4 6
 Please enter processor speeds : 
-1 2 4 3 4
+1 2 4 8 6 4 7 8 9 6
 
 SHA HASH:
